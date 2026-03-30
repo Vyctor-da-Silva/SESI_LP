@@ -14,7 +14,7 @@ int main() {
 
 	media = ("(%.2f + %.2f + %.2f) / %.2f", (n1 + n2 + n3) / 3);
 
-	printf("sua media %.2f C):", media);
+	printf("sua media %.2f /n :", media);
 
 	if(media >= 7.0) {
 		printf("APROVADO");
