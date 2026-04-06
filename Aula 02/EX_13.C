@@ -8,8 +8,6 @@ Realize a operação e exiba o resultado.
 int main() {
     float num1, num2, resultado;
     char operacao;
-
-    // Entrada de dados
     printf("Digite o primeiro numero: ");
     scanf("%f", &num1);
 
@@ -18,8 +16,6 @@ int main() {
 
     printf("Digite a operacao (+, -, *, /): ");
     scanf(" %c", &operacao); // espaço antes do %c evita problemas com ENTER
-
-    // Verificação da operação
     switch (operacao) {
         case '+':
             resultado = num1 + num2;
