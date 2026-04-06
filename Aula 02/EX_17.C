@@ -9,12 +9,8 @@ Quente (> 25°C)
 
 int main() {
     float temperatura;
-
-    // Entrada da temperatura
     printf("Digite a temperatura em °C: ");
     scanf("%f", &temperatura);
-
-    // Classificação
     if (temperatura < 15.0) {
         printf("Frio\n");
     } else if (temperatura <= 25.0) {
