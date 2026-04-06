@@ -10,12 +10,8 @@ Calcule o valor total.
 
 int main() {
     float consumo, valor;
-
-    // Entrada do consumo
     printf("Digite o consumo em kWh: ");
     scanf("%f", &consumo);
-
-    // Cálculo do valor
     if (consumo <= 100) {
         valor = consumo * 0.50;
     } else if (consumo <= 200) {
@@ -23,8 +19,6 @@ int main() {
     } else {
         valor = consumo * 1.00;
     }
-
-    // Saída
     printf("Valor total da conta: R$ %.2f\n", valor);
 
 }
