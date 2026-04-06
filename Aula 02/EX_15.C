@@ -9,12 +9,8 @@ Voto obrigatório (18–70)
 
 int main() {
     int idade;
-
-    // Entrada da idade
     printf("Digite a idade: ");
     scanf("%d", &idade);
-
-    // Verificação da situação de votação
     if (idade < 16) {
         printf("Nao pode votar\n");
     } else if ((idade >= 16 && idade <= 17) || (idade > 70)) {
