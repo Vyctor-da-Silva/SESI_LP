@@ -7,14 +7,12 @@ Leia dois números e verifique se o primeiro é múltiplo do segundo.
 int main() {
     int num1, num2;
 
-    // Entrada de dados
     printf("Digite o primeiro numero: ");
     scanf("%d", &num1);
 
     printf("Digite o segundo numero: ");
     scanf("%d", &num2);
 
-    // Verificação (evitando divisão por zero)
     if (num2 == 0) {
         printf("Nao e possivel verificar (divisao por zero).\n");
     } else if (num1 % num2 == 0) {
