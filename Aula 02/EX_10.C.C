@@ -12,20 +12,16 @@ Obesidade (≥ 30)
 int main() {
     float peso, altura, imc;
 
-    // Entrada de dados
     printf("Digite o peso (kg): ");
     scanf("%f", &peso);
 
     printf("Digite a altura (m): ");
     scanf("%f", &altura);
 
-    // Cálculo do IMC
     imc = peso / (altura * altura);
 
-    // Exibição do IMC
     printf("IMC: %.2f\n", imc);
 
-    // Classificação
     if (imc < 18.5) {
         printf("Classificacao: Abaixo do peso\n");
     } else if (imc < 25) {
