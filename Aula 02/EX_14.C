@@ -10,16 +10,11 @@ D (< 5)
 
 int main() {
     float nota;
-
-    // Entrada da nota
     printf("Digite a nota (0 a 10): ");
     scanf("%f", &nota);
-
-    // Verificação de validade
     if (nota < 0 || nota > 10) {
         printf("Nota invalida!\n");
     } else {
-        // Classificação
         if (nota >= 9.0) {
             printf("Conceito: A\n");
         } else if (nota >= 7.0) {
