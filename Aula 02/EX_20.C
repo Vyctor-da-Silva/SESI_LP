@@ -10,12 +10,8 @@ Acima de 100 → multa gravíssima
 
 int main() {
     float velocidade;
-
-    // Entrada da velocidade
     printf("Digite a velocidade do carro (km/h): ");
     scanf("%f", &velocidade);
-
-    // Verificação da multa
     if (velocidade <= 60) {
         printf("Sem multa\n");
     } else if (velocidade <= 80) {
