@@ -10,12 +10,8 @@ Acima de 20kg → R$50
 int main() {
     float peso;
     float frete;
-
-    // Entrada do peso
     printf("Digite o peso da encomenda (kg): ");
     scanf("%f", &peso);
-
-    // Cálculo do frete
     if (peso <= 5.0) {
         frete = 10.0;
     } else if (peso <= 20.0) {
@@ -23,8 +19,6 @@ int main() {
     } else {
         frete = 50.0;
     }
-
-    // Saída
     printf("Valor do frete: R$ %.2f\n", frete);
 
 }
