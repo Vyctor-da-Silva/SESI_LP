@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int somadedoisvalores(int a, int b){
+    return a + b;
+}
+
+int subtracaodedoisvalores(int a, int b){
+    return a - b;
+}
+
+int divisaodedoisvalores(int a, int b){
+    return a / b;
+}
+
+int multiplicacaodedoisvalores(int a, int b){
+    return a * b;
+}
+
+void imprimirvalor(int resultado){
+    printf("\nResultado: %i\n", resultado);
+}
+
+int main(){
+    int n1,n2;
+    int resultado;
+    int escolha;
+
+    printf("\n------------------ calculadora aura maxima ------------------\n");
+
+    while(1){ 
+
+        printf("\n1 = soma\n2 = subtracao\n3 = multiplicacao\n4 = divisao\n0 = parar");
+        printf("\n\nqual voce quer? ");
+        scanf("%i", &escolha);
+
+        if(escolha == 0){
+            printf("Programa encerrado.\n");
+            break; 
+        }
+
+        printf("\ndigite primeiro valor: ");
+        scanf("%i", &n1);
+
+        printf("digite segundo valor: ");
+        scanf("%i", &n2);
+
+        if(escolha == 1){
+            resultado = somadedoisvalores(n1, n2);
+        }else if(escolha == 2){
+            resultado = subtracaodedoisvalores(n1, n2);
+        }else if(escolha == 3){
+            resultado = multiplicacaodedoisvalores(n1, n2);
+        }else if(escolha == 4){
+            if(n2 == 0){
+                printf("Erro: divisao por zero!\n");
+                continue;
+            }
+            resultado = divisaodedoisvalores(n1, n2);
+        }else{
+            printf("Opcao invalida!\n");
+            continue; 
+        }
+
+        imprimirvalor(resultado);
+    }
+    
+}
